@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant STORY - Food, Wine, Music | Târgoviște</title>
+    <meta name="description" content="Restaurant STORY - un loc pentru prieteni cu mâncăruri delicioase și vibrații bune. Food, Wine, Music în Centrul Vechi din Târgoviște.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-main">STORY</span>
+                <span class="logo-sub">food · wine · music</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Deschide meniul">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#despre">Despre Noi</a></li>
+                <li><a href="#meniu">Meniu</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#testimoniale">Recenzii</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:0722889390" class="nav-cta">Rezervă Acum</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-tagline">Din 2015 în Centrul Vechi al Târgoviștei</p>
+            <h1>Un loc pentru prieteni,<br>cu mâncăruri delicioase<br>și <em>vibrații bune</em></h1>
+            <p class="hero-description">Food is what we do!</p>
+            <div class="hero-buttons">
+                <a href="#meniu" class="btn btn-primary">Vezi Meniul</a>
+                <a href="tel:0722889390" class="btn btn-outline">Rezervă o Masă</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Descoperă</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="despre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img about-img-1">
+                        <div class="img-placeholder" data-text="Interior Elegant"></div>
+                    </div>
+                    <div class="about-img about-img-2">
+                        <div class="img-placeholder" data-text="Preparate Rafinate"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Povestea Noastră</span>
+                    <h2>Mai mult decât un restaurant.<br>O <em>experiență</em>.</h2>
+                    <p>Din decembrie 2015, Restaurant STORY este locul unde mâncarea excelentă, vinul ales și muzica bună se îmbină într-o experiență de neuitat. Situat în inima Centrului Vechi din Târgoviște, pe Strada Negustorilor, vă invităm să descoperiți povestea noastră.</p>
+                    <p>De la micul dejun până la cina romantică, fiecare preparat este gândit cu pasiune și preparat cu ingrediente proaspete. Meniul nostru îmbină rețete tradiționale românești cu influențe internaționale, iar carta de vinuri este selectată cu grijă.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Ani de experiență</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">18.000+</span>
+                            <span class="stat-label">Check-in-uri</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5.0</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#127860;</div>
+                    <h3>Food</h3>
+                    <p>Preparate tradiționale românești și internaționale, de la mic dejun la cină, toate gătite cu ingrediente proaspete și pasiune.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127863;</div>
+                    <h3>Wine</h3>
+                    <p>O selecție variată de vinuri locale și internaționale — alb, roze și roșu — alese cu grijă să completeze fiecare preparat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127926;</div>
+                    <h3>Music</h3>
+                    <p>Muzică live și atmosferă vibrantă care transformă fiecare masă într-o experiență memorabilă.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="meniu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Meniul Nostru</span>
+                <h2>Descoperă <em>preparatele</em> noastre</h2>
+                <p>O selecție din cele mai apreciate categorii ale meniului nostru</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="mic-dejun">Mic Dejun</button>
+                <button class="menu-tab" data-tab="supe">Supe Cremă</button>
+                <button class="menu-tab" data-tab="salate">Salate</button>
+                <button class="menu-tab" data-tab="paste">Paste</button>
+                <button class="menu-tab" data-tab="pizza">Pizza</button>
+                <button class="menu-tab" data-tab="burger">Burgeri</button>
+                <button class="menu-tab" data-tab="peste">Pește & Fructe de Mare</button>
+                <button class="menu-tab" data-tab="vegan">Vegan</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Mic Dejun -->
+                <div class="menu-panel active" id="mic-dejun">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Story Breakfast</h4>
+                                <span class="menu-price">33 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Story Brunch</h4>
+                                <span class="menu-price">33 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Brunch de Poftă</h4>
+                                <span class="menu-price">40 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Bruschete cu Somon</h4>
+                                <span class="menu-price">27 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Sandwich Croque Madame</h4>
+                                <span class="menu-price">24 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Sandwich Croque Monsieur</h4>
+                                <span class="menu-price">23 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Omletă Țărănească</h4>
+                                <span class="menu-price">22 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Croisant cu Cremă de Brânză și Somon</h4>
+                                <span class="menu-price">20 lei</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Supe -->
+                <div class="menu-panel" id="supe">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Supă Cremă de Roșii cu Gorgonzola</h4>
+                                <span class="menu-price">23 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Supă Cremă de Broccoli</h4>
+                                <span class="menu-price">23 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Supă Cremă de Ciuperci</h4>
+                                <span class="menu-price">23 lei</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salate -->
+                <div class="menu-panel" id="salate">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată Story</h4>
+                                <span class="menu-price">45 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată Caesar</h4>
+                                <span class="menu-price">34 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată de Avocado cu Somon Fumé</h4>
+                                <span class="menu-price">41 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată Grecească</h4>
+                                <span class="menu-price">29 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată de Pui cu Avocado</h4>
+                                <span class="menu-price">39 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată de Ton</h4>
+                                <span class="menu-price">34 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată de Rucola</h4>
+                                <span class="menu-price">23 lei</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paste -->
+                <div class="menu-panel" id="paste">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tagliatelle cu Fructe de Mare Diavola</h4>
+                                <span class="menu-price">75 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tagliatelle cu Fructe de Mare și Sos Pesto</h4>
+                                <span class="menu-price">48 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tagliatelle Pollo e Funghi</h4>
+                                <span class="menu-price">37 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Penne Carbonara</h4>
+                                <span class="menu-price">34 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Penne Gamberi e Chilli</h4>
+                                <span class="menu-price">49 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tagliatelle cu Somon</h4>
+                                <span class="menu-price">47 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Spaghete Aglio Olio e Pepperoncino cu Creveți</h4>
+                                <span class="menu-price">48 lei</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza -->
+                <div class="menu-panel" id="pizza">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Margherita</h4>
+                                <span class="menu-price">33 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Quattro Stagioni</h4>
+                                <span class="menu-price">37 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Specială</h4>
+                                <span class="menu-price">40 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Quattro Formaggi</h4>
+                                <span class="menu-price">39 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Diavola</h4>
+                                <span class="menu-price">37 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Prosciutto e Funghi</h4>
+                                <span class="menu-price">36 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Carnivore</h4>
+                                <span class="menu-price">40 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Țărănească</h4>
+                                <span class="menu-price">40 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Carbonara</h4>
+                                <span class="menu-price">40 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Focaccia con Oregano</h4>
+                                <span class="menu-price">12 lei</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burger -->
+                <div class="menu-panel" id="burger">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Double Cheesy Burger Cheddar</h4>
+                                <span class="menu-price">51 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Superstar Burger</h4>
+                                <span class="menu-price">44 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pulled Porc Burger</h4>
+                                <span class="menu-price">43 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Giant Perfect Burger</h4>
+                                <span class="menu-price">42 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Cheeseburger</h4>
+                                <span class="menu-price">39 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>American Burger</h4>
+                                <span class="menu-price">42 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Cheeseburger de Pui</h4>
+                                <span class="menu-price">38 lei</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peste -->
+                <div class="menu-panel" id="peste">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Somon la Grătar cu Sos de Piper Verde</h4>
+                                <span class="menu-price">64 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Somon & Rice</h4>
+                                <span class="menu-price">64 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Șnițel Șalău în Crustă Quattro Formaggi</h4>
+                                <span class="menu-price">55 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Fish & Chips</h4>
+                                <span class="menu-price">52 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Doradă la Grătar cu Mix de Salată</h4>
+                                <span class="menu-price">59 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Păstrăv la Grătar cu Mămăligă</h4>
+                                <span class="menu-price">49 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Creveți Saganaki</h4>
+                                <span class="menu-price">65 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Midii în Sos de Vin</h4>
+                                <span class="menu-price">64 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Platou Seafood (1 persoană)</h4>
+                                <span class="menu-price">76 lei</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vegan -->
+                <div class="menu-panel" id="vegan">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Mix Mezze</h4>
+                                <span class="menu-price">53 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Hummus</h4>
+                                <span class="menu-price">26 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată de Vinete</h4>
+                                <span class="menu-price">25 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Vegetariană</h4>
+                                <span class="menu-price">32 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tagliatelle Primavera</h4>
+                                <span class="menu-price">35 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Salată Veggie Story</h4>
+                                <span class="menu-price">40 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Garden Gourmet Burger</h4>
+                                <span class="menu-price">44 lei</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Prăjitură Vegană cu Căpșuni</h4>
+                                <span class="menu-price">24 lei</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cta">
+                <p>Aceasta este doar o selecție din meniul nostru complet.</p>
+                <a href="https://restaurantstory.ro/" class="btn btn-primary" target="_blank" rel="noopener">Vezi Meniul Complet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Galerie</span>
+                <h2>Momente din <em>restaurantul</em> nostru</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large">
+                    <div class="img-placeholder" data-text="Interior Restaurant"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="img-placeholder" data-text="Preparate Speciale"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="img-placeholder" data-text="Muzică Live"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="img-placeholder" data-text="Selecție de Vinuri"></div>
+                </div>
+                <div class="gallery-item gallery-item-large">
+                    <div class="img-placeholder" data-text="Terasă"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="img-placeholder" data-text="Desert"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions -->
+    <section class="section promotions">
+        <div class="container">
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <span class="promo-badge">Ofertă</span>
+                    <h3>5% reducere</h3>
+                    <p>la comenzi de peste 100 lei</p>
+                </div>
+                <div class="promo-card">
+                    <span class="promo-badge">Ofertă</span>
+                    <h3>Apă Bucovina 2L Gratis</h3>
+                    <p>la comenzi de peste 150 lei</p>
+                </div>
+                <div class="promo-card">
+                    <span class="promo-badge">Ofertă</span>
+                    <h3>4 Pizza + 1 Gratis</h3>
+                    <p>la comenzile telefonice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" id="testimoniale">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Recenzii</span>
+                <h2>Ce spun <em>clienții</em> noștri</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>"Loc superb în centrul vechi, mâncarea excelentă și atmosfera de vis. Recomand cu căldură!"</p>
+                    <span class="testimonial-author">— Client fidel</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>"Cele mai bune paste din oraș! Serviciul impecabil și prețurile foarte ok pentru calitatea oferită."</p>
+                    <span class="testimonial-author">— Vizitator</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>"Burgerii sunt fenomenali, iar seara cu muzică live transformă totul într-o experiență specială."</p>
+                    <span class="testimonial-author">— Iubitor de burgeri</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2>Vino să ne <em>vizitezi</em></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128205;</div>
+                        <div>
+                            <h4>Adresă</h4>
+                            <p>Strada Negustorilor Nr. 1<br>Centrul Vechi, Târgoviște<br>130023, România</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128222;</div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p><a href="tel:0722889390">0722 889 390</a><br><a href="tel:0724759308">0724 759 308</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128340;</div>
+                        <div>
+                            <h4>Program</h4>
+                            <p>Luni – Sâmbătă: 09:00 – 22:30<br>Duminică: 10:00 – 22:30</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128231;</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:elly_crina@yahoo.com">elly_crina@yahoo.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.facebook.com/StoryFoodWineMusic/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/storyfoodwinemusic/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.5!2d25.4587606!3d44.9282408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2f698fec87635%3A0xf9682591b32b0dd5!2sRestaurant%20STORY-food%2C%20wine%2C%20music!5e0!3m2!1sro!2sro!4v1711500000000!5m2!1sro!2sro"
+                        width="100%"
+                        height="100%"
+                        style="border:0; border-radius: 16px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Locația Restaurant STORY pe Google Maps">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-main">STORY</span>
+                    <span class="logo-sub">food · wine · music</span>
+                    <p>Un loc pentru prieteni cu mâncăruri delicioase și vibrații bune.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigare</h4>
+                    <a href="#despre">Despre Noi</a>
+                    <a href="#meniu">Meniu</a>
+                    <a href="#galerie">Galerie</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicii</h4>
+                    <a href="tel:0722889390">Rezervări</a>
+                    <a href="https://restaurantstory.ro/" target="_blank" rel="noopener">Comandă Online</a>
+                    <a href="https://wolt.com/en/rou/targoviste/restaurant/story-food-wine-music-67dac1f43d53c7109739523e" target="_blank" rel="noopener">Livrare Wolt</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2015 – 2026 Restaurant STORY – food, wine, music. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
